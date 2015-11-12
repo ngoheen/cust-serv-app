@@ -1,0 +1,722 @@
+/* FONTS */
+@font-face {
+   font-family: 'Futura Today';
+   src: url('../fonts/futura_today_normal.eot');
+   src: url('../fonts/futura_today_normal.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_normal.woff') format('woff'),
+        url('../fonts/futura_today_normal.ttf') format('truetype'),
+        url('../fonts/futura_today_normal.svg#Futura_Today') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Futura Today Demi Bold';
+   src: url('../fonts/futura_today_demibold.eot');
+   src: url('../fonts/futura_today_demibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_demibold.woff') format('woff'),
+        url('../fonts/futura_today_demibold.ttf') format('truetype'),
+        url('../fonts/futura_today_demibold.svg#Futura_Today_Demi_Bold') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Futura Today Bold';
+   src: url('../fonts/futura_today_bold.eot');
+   src: url('../fonts/futura_today_bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_bold.woff') format('woff'),
+        url('../fonts/futura_today_bold.ttf') format('truetype'),
+        url('../fonts/futura_today_bold.svg#Futura_Today_Bold') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Futura Today Light';
+   src: url('../fonts/futura_today_light.eot');
+   src: url('../fonts/futura_today_light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_light.woff') format('woff'),
+        url('../fonts/futura_today_light.ttf') format('truetype'),
+        url('../fonts/futura_today_light.svg#Futura_Today_Light') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Helvetica Neu Light';
+   src: url('../fonts/helveticaneue-light-webfont.eot');
+   src: url('../fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helveticaneue-light-webfont.woff') format('woff'),
+        url('../fonts/helveticaneue-light-webfont.ttf') format('truetype'),
+        url('../fonts/helveticaneue-light-webfont.svg#Helvetica_Neue_Light') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+@font-face {
+    font-family: 'Gannett Icons';
+    src: url('../fonts/gannett-icons.eot');
+    src: url('../fonts/gannett-icons.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/gannett-icons.ttf') format('truetype'), 
+         url('../fonts/gannett-icons.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.spt-body {
+	box-sizing: border-box;
+	color: rgb(51,51,51);
+	font-family: 'Helvetica_Neue_Light', 'HelveticaNeueLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+	width: 100%;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+.player-name,
+.nowrap {
+	white-space: nowrap;
+}
+.mobile-ad-container {
+	background: rgb(204,204,204);
+	box-sizing: border-box;
+	display: none;
+	height: 50px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+.tablet-ad-container {
+	height: auto;
+	margin: auto;
+	width: 300px;
+}
+.spt-ad-container {
+	background: rgb(204,204,204);
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+.spt-section-ad {
+	padding: 0;
+}
+.ad-cell {
+	background: rgb(204,204,204);
+	text-align: center;
+}
+/* ------ STATS TABLE ------ */
+table {
+	width: 100%;
+}
+table, td, th {
+	border-spacing: 0;
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+
+td {
+	border-bottom: 1px solid rgb(217,217,217);
+	border-right: 1px solid rgb(217,217,217);
+	color: rgb(51,51,51);
+	font-family: 'Futura Today',sans-serif;
+	font-size: 14px;
+	height: 40px;
+	line-height: 19px;
+	padding: 0 15px;
+	text-align: right;
+}
+
+.no-right-border {
+	border-right: none;
+}
+
+th {
+	background: rgb(243,243,243);
+	border-bottom: 1px solid rgb(217,217,217);
+	border-top: 1px solid rgb(217,217,217);
+	border-right: none !important;      
+	color: rgb(51,51,51);
+	font-family: 'Futura Today Demi Bold', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 15px;
+	text-align: right;
+	text-transform: uppercase;
+}
+.bio-table,
+.roster-table,
+.schedule-table {
+	border: 0;
+	border-collapse: collapse;
+	font-family: 'Futura Today';
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.go-back-link {
+	margin: 20px 0;
+	padding: 0;
+	position: relative;
+}
+
+.go-back-link a {
+	color: rgb(0,170,255);
+	color: #2fabfe;
+	display: inline-block;
+	font-family: 'Helvetica Neue Light',sans-serif;
+	font-size: 15px;
+	margin-left:15px;
+	text-decoration: none;
+}
+
+.go-back-link a:before {
+	background: url('../images/spt-sprite.png') no-repeat 0 -75px;
+	top: 4px;
+	content: '';
+	display: inline-block;
+	height: 11px;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	width: 6px;
+}
+
+.roster-table th,
+.roster-table td {
+	text-align: center;
+}
+.roster-table th span,
+.roster-table td span {
+	text-align: right;
+}
+.roster-table .player-dob,
+.roster-table .player-status,
+.roster-table .player-school,
+.roster-table .player-name,
+.roster-table .player-home,
+.roster-table .player-prev-school {
+	text-align: left;
+	white-space: nowrap;
+}
+
+.roster-table .player-number {
+	text-align: right;
+}
+.player-name {
+	width: 35%;
+}
+
+.roster-table .player-name {
+	width: 20%;
+}
+.roster-table .player-exp,
+.roster-table .player-age,
+.roster-table .player-position,
+.roster-table .player-number,
+.roster-table .player-yr,
+.roster-table .player-weight,
+.roster-table .player-height {
+	white-space: nowrap;
+	width: 7%;
+	}
+.roster-table .player-height {
+	border-right: none;
+	padding: 0;
+}
+
+.roster-table .player-dob {
+	width: 13%;
+}
+
+
+.player-season,
+.player-team,
+.player-name {
+	text-align: left;
+	white-space: nowrap;
+}
+.player-team {
+	text-transform: uppercase;
+}
+.spt-schedule .mobile-ad-container {
+	display: block;
+}
+.schedule-tv {
+	border-right: none;
+	padding: 10px 15px;
+	position: relative;
+	text-transform: uppercase;
+	width: 15%;
+	white-space: normal;
+	min-width: 15%;	
+}
+.locator {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	width: 17px;
+	}
+.spts-logo {
+	display: inline-block;
+	height: 26px;
+	margin-left: 5px;
+	vertical-align: middle;
+	width: 26px;
+}
+
+.schedule-opponent {
+	padding-left: 15px;
+	position: relative;
+	text-align: left;
+	white-space: nowrap;
+	width: 20%;
+}
+.schedule-week {
+	padding-right: 15px;
+	padding-left: 10px;
+	width: 3%;
+}
+.team-name {
+	display: inline-block;
+	margin-left: 10px;
+	text-transform: capitalize;
+	vertical-align: middle;
+}
+.player-yr,
+th.player-status,
+th.player-throws,
+th.player-bats,
+.player-position,
+.schedule-tv,
+.team-name .spt-mobile-only {
+	text-transform: uppercase;
+}
+.player-throws,
+.player-bats,
+.player-status {
+	text-transform: capitalize;
+}
+/*.roster-table .player-name {
+	padding-left: 10px;
+	text-align: left;
+	width: 135px;
+}*/
+
+.schedule-win-loss {
+	padding-right: 15px;
+	white-space: nowrap;
+	width: 5%;
+}
+.schedule-score {
+	padding-right: 15px;
+	white-space: nowrap;
+	width: 10%;
+}
+.schedule-date {
+	padding-left: 15px;
+	text-align: left;
+	white-space: nowrap;
+	width: 15%;
+}
+.schedule-date .spt-mobile-only,
+.schedule-date .spt-tablet-only {
+	text-transform: capitalize;
+}
+.schedule-score a {
+	color: rgb(60,177,255);
+	text-decoration: none;
+}
+tr.career td {
+	font-family: 'Futura Today Demi Bold',sans-serif;
+}
+td.career {
+	text-align: left;
+	text-transform: uppercase;
+}
+.tablet-hide {
+	display: none;
+}
+.spt-stats-data:last-child {
+	border-right: none;
+}
+/* ------ PERSONAL INFO ------ */
+.player-top-info {
+	border-bottom: 1px solid rgb(204,204,204);
+	color: rgb(51,51,51);
+	position: relative;
+}
+.player-personal {
+	text-align: left;
+}
+.player-image {
+	float: right;
+	height: 160px;
+	margin: 0;
+	overflow: hidden;
+	vertical-align: top;
+	width: 160px;
+}
+.round-image {
+	border-radius: 50%;
+	overflow: hidden;
+	height: 150px;
+	width: 150px;
+}
+.round-image img {
+	display: block;
+	width: 150px;
+	height: auto;
+}
+.player-personal h1 {
+	color: rgb(51,51,51);
+	font-family: 'Futura Today', sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	margin: 25px 15px 10px 0;
+	text-align: left;
+}
+.player-personal h2 {
+	font-family: 'Futura Today', sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0 15px 22px 0;
+}
+ul.player-bio {
+	float:left;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: calc(100% - 170px);
+	/*width: 100%;*/
+}
+ul.player-bio li {
+	font-family: 'Futura Today', sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+}
+ul.player-bio li span {
+	display: inline-block;
+	font-family: 'Futura Today Demi Bold',sans-serif;
+	margin: 0 10px 0 0;
+	text-transform: capitalize;
+}
+ul.player-bio li span+span {
+	font-family: 'Futura Today', sans-serif;
+	text-transform: none;
+}
+ul.player-bio li span.dob {
+	text-transform: uppercase;
+}
+ul.player-bio li span.num:after {
+	content: " years";
+}
+ul.player-bio li span.wt:after {
+	content: " lbs";
+}
+
+/* ------ HEADERS ------ */
+.spt-section-top {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    height: 47px;
+}
+.spt-section {
+    clear: both;
+    margin: 0;
+    padding: 0 14px;
+    position: relative;
+}
+.spt-heading-h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Futura Today';
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding-top: 13px;
+    text-transform: uppercase;
+}
+.subhead-h2 {
+	box-sizing: border-box;
+	color: rgb(153,153,153);/*#999*/
+	font-family: 'Futura Today';
+	font-size: 18px;
+	font-weight: normal;
+	margin: 15px;
+	text-transform: uppercase;
+	width: auto;
+}
+
+/* small phones only */
+@media screen and (max-width: 320px) {
+	.roster-table.ncaaf .player-name,
+	.roster-table .player-name {
+		width: 20%;
+	}
+	tr.career td {
+		font-size: 13px;
+	}
+	.roster-table .player-number,
+	.roster-table .player-yr {
+		width: 6%;
+	}
+	.roster-table .player-number {
+		padding-right: 10px;
+	}
+	.schedule-opponent {
+		width: 35%;
+		padding-left: 10px;
+	}
+	.schedule-date {
+		padding-left: 10px;
+		white-space: nowrap;
+		width: 22%;
+	}
+	.schedule-week {
+		width: 10%;
+	}
+	th.schedule-week {
+		padding-left: 0;
+		padding-right:5px;
+	}
+	.schedule-score {
+		border-right: none;
+		padding-left: 0;
+		padding-right: 10px;
+		width: 28%;
+	}
+	.roster-table .player-home,
+	.roster-table .player-prev-school,
+	.schedule-win-loss,
+	.schedule-tv {
+		display: none;
+		width: 0%;
+	}
+	.team-name {
+		margin-left: 2px;
+	}
+	
+}
+
+/* larger phones */
+@media screen and (min-width: 321px) and (max-width: 639px) {
+	
+	.ncaab-roster-table .player-name {
+		width: 16%;
+	}
+	.roster-table .player-number,
+	.roster-table .player-yr {
+		width: 6%;
+	}
+	
+	.schedule-opponent {
+		width: 35%;
+	}
+	.schedule-date {
+		white-space: nowrap;
+		width: 22%;
+	}
+	.schedule-week {
+		width: 10%;
+	}
+	th.schedule-week {
+		padding-right: 10px;
+	}
+	.schedule-score {
+		border-right: none;
+		width: 28%;
+	}
+	
+	.schedule-win-loss,
+	.schedule-tv {
+		display: none;
+		width: 0%;
+	}
+}
+/* mobile only */
+@media screen and (max-width: 639px) {
+	.bio-games-started,
+	.field-goal-percent,
+	.free-throw-percent,
+	.bio-turnovers,
+	.bio-steals,
+	.three-point-percent,
+	.player-games-played,
+	.rushing-average-yards-per,
+	.rushing_first_down,
+	.fumbles-committed,
+	.fumbles-lost,
+	.passing-percent,
+	.passing-yds-avg,
+	.passing-yds,
+	.passing_longest_yards,
+	.passing-sac,
+	.tablet-ad-container,
+	.roster-table .player-exp,
+	.roster-table .player-dob,
+	.roster-table .player-school,
+	.roster-table .player-position,
+	.player-status,
+	.player-height,
+	.player-weight,
+	.mobile-hide,
+	.schedule-week,
+	.spt-tablet-only,
+	.schedule-win-loss,
+	.schedule-time,
+	.schedule-tv,
+	.spt-wide-only,
+	.roster-table .player-home,
+	.roster-table .player-prev-school {
+		display: none;
+	}
+	.roster-table .player-age {
+		border-right: none;
+	}
+	.mobile-ad-container {
+		display: block;
+	}
+	.roster-table .player-weight,
+	.roster-table .player-height {
+		display: table-cell;
+	}
+	
+	.tablet-hide {
+		display: block;
+	}
+	.player-name {
+		width: 145px;
+	}
+	ul.player-bio {
+		float: none;
+		width: 100%;
+	}
+	.player-personal {
+		margin-left: 10px;
+	}
+	.menu-left-arrow {
+		margin-left: 10px;
+	}
+	td.career {
+		font-size: 14px;
+		padding-left: 10px;
+		text-align: left;
+	}
+	.mobile-ad-container {
+		display: block;
+	}
+	.touchbacks,
+	.rushing_touchdowns,
+	.losses {
+		border-right: none;
+	}
+	.player-personal {
+		width: 100%;
+	}
+	.player-top-info {
+		border-bottom: none;
+	}
+	.round-image {
+		border-radius: 50%;
+		height: 125px;
+		overflow: hidden;
+		width: 125px;
+	}
+	.round-image img {
+		display: block;
+		height: 125px;
+		width: 125px;
+	}
+	.player-image {
+		width: 125px;
+		height: auto;
+		margin: 0 25px 0 0;
+	}
+	.roster-h2,
+	.subhead-h2 {
+		margin-left: 10px;
+	}
+	.bio-table th,
+	.bio-table td {
+		padding-left: 10px;
+		padding-right: 10px;
+	
+	}
+	.bio-table td.passing-rating {
+		width: 46px;
+	}
+}
+
+/* tablet and larger only */
+@media only screen and (min-width: 640px) {
+	.spt-mobile-only {
+		display: none;
+	}
+	.roster-table.nhl .player-name,
+	.roster-table.nhl .player-home {
+		width: 25%;
+	}
+	.roster-table.ncaaf .player-name {
+		width: 30%;
+	}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 919px) {
+	.spt-wide-only {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 920px) {
+
+}
+
+/* @2x and @3x sprite images */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.spt-menu-trigger:after {
+		background-image: url('../images/spt-sprite-2x.png');
+		background-size: 150px auto;
+	}
+	.go-back-link a:before {
+		background-image: url('../images/spt-sprite-2x.png');
+		background-size: 150px auto;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-device-pixel-ratio: 3) {
+	.spt-menu-trigger:after {
+		background-image: url('../images/spt-sprite-3x.png');
+		background-size: 150px auto;
+	}
+	.go-back-link a:before {
+		background-image: url('../images/spt-sprite-3x.png');
+		background-size: 150px auto;
+	}
+}
+/* Additional styles for Roster */
+	.player-name {
+	text-align: left;
+}

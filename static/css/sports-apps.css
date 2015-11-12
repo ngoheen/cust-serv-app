@@ -1,0 +1,427 @@
+/* FONTS */
+@font-face {
+   font-family: 'Futura Today';
+   src: url('../fonts/futura_today_normal.eot');
+   src: url('../fonts/futura_today_normal.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_normal.woff') format('woff'),
+        url('../fonts/futura_today_normal.ttf') format('truetype'),
+        url('../fonts/futura_today_normal.svg#Futura_Today') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Futura Today Demi Bold';
+   src: url('../fonts/futura_today_demibold.eot');
+   src: url('../fonts/futura_today_demibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_demibold.woff') format('woff'),
+        url('../fonts/futura_today_demibold.ttf') format('truetype'),
+        url('../fonts/futura_today_demibold.svg#Futura_Today_Demi_Bold') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Futura Today Bold';
+   src: url('../fonts/futura_today_bold.eot');
+   src: url('../fonts/futura_today_bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_bold.woff') format('woff'),
+        url('../fonts/futura_today_bold.ttf') format('truetype'),
+        url('../fonts/futura_today_bold.svg#Futura_Today_Bold') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Futura Today Light';
+   src: url('../fonts/futura_today_light.eot');
+   src: url('../fonts/futura_today_light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_light.woff') format('woff'),
+        url('../fonts/futura_today_light.ttf') format('truetype'),
+        url('../fonts/futura_today_light.svg#Futura_Today_Light') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Helvetica Neue Light';
+   src: url('../fonts/helveticaneue-light-webfont.eot');
+   src: url('../fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helveticaneue-light-webfont.woff') format('woff'),
+        url('../fonts/helveticaneue-light-webfont.ttf') format('truetype'),
+        url('../fonts/helveticaneue-light-webfont.svg#Helvetica_Neue_Light') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+@font-face {
+    font-family: 'Gannett Icons';
+    src: url('../fonts/gannett-icons.eot');
+    src: url('../fonts/gannett-icons.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/gannett-icons.ttf') format('truetype'), 
+         url('../fonts/gannett-icons.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+.sports-app-body {
+	box-sizing: border-box;
+	color: rgb(51,51,51);
+	font-family: 'Helvetica Neue Light', 'HelveticaNeueLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+	width: 100%;
+}
+span {
+	color: #333 !important;
+	text-decoration: none !important;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+.nowrap {
+	white-space: nowrap;
+}
+#ncaab,
+#ncaaf,
+#nhl,
+#mlb,
+#nba,
+#nfl {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.nav-carousel {
+	background: rgb(51,51,51);
+	box-sizing: border-box;
+	height: 50px;
+	width: 100%;
+}
+.mobile-ad-container {
+	background: rgb(204,204,204); /*#ccc*/
+	box-sizing: border-box;
+	display: none;
+	height: 50px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+#nfl .mobile-ad-container,
+#nfl.schedule .mobile-ad-container {
+	display: block !important;
+}
+.tablet-ad-container {
+	display: inline-block;
+	height: auto;
+	position: absolute;
+	right: 15px;
+	top: 70px;
+	width: 300px;
+}
+
+/* ------ STATS TABLE ------ */
+table {
+	width: 100%;
+}
+table, td, th {
+	border-spacing: 0;
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+td {
+	border-bottom: 1px solid rgb(204,204,204);
+	border-right: 1px solid rgb(204,204,204);
+	color: rgb(51,51,51);
+	font-family: 'Futura Today',sans-serif;
+	font-size: 15px;
+	line-height: 42px;
+	padding-right: 10px;
+	text-align: right;
+}
+.player-status,
+.no-right-border {
+	border-right: none;
+}
+
+th {
+	background: rgb(244,244,244); /*#f4f4f4*/
+	border-bottom: 1px solid rgb(204,204,204);
+	border-top: 1px solid rgb(204,204,204);
+	border-right: none !important;      
+	color: rgb(51,51,51);
+	font-family: 'Futura Today Demi Bold', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 42px;
+	padding-right: 10px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+#ncaaf th.player-games-played,
+#ncaaf td.player-games-played,
+th.player-season,
+th.player-team,
+td.player-season,
+td.player-team,
+.player-name {
+	white-space: nowrap;
+	text-align: left;
+	padding-left: 15px;
+}
+tr.career td {
+	font-family: 'Futura Today Demi Bold', sans-serif;
+	font-size: 15px;
+}
+td.career {
+	text-align: left;
+	padding-left: 15px;
+}
+td.career,
+.player-team {
+	text-transform: uppercase;
+}
+
+/* ------ TOP IN-PAGE NAVIGATION ------ */
+.menu-left-arrow  {
+	background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBAQFBAYFBQYJBgUGCQsIBgYICwwKCgsKCgwQDAwMDAwMEAwODxAPDgwTExQUExMcGxsbHCAgICAgICAgICD/2wBDAQcHBw0MDRgQEBgaFREVGiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICD/wAARCAALAAYDAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABgf/xAAkEAABBAECBgMAAAAAAAAAAAACAQMEBREGEgATISIxQQgVM//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC2fSVWurWzb1OyEiLUSFjRNPuZTle0mPYxvN8fyVO0Q6J3KfAFvkvbWWnaGsv6OSdfcHKSA5NYXaZRibcd5ReiFDBFTPjrjyuQ/9k=');
+	display: inline-block;
+	margin: 22px 10px 0 15px;
+	height:	11px;
+	width: 6px;
+}
+.menu-down-arrow {
+	width: 19px;
+	height: 9px;
+	background-repeat: no-repeat;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAJCAYAAADQHRcxAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNAay06AAAAAVdEVYdENyZWF0aW9uIFRpbWUAOS8xNS8xNe84e9UAAAEwSURBVCiRnZA9a8JgFIWvlO46ZRTpkMEf8Zo1GTrkg2atS4ItWZzDOzgkGW1I1k5pcNTRUdCxCIWCmKy6BUTn41Kt9iPFHrjTuTznnluJogi1Wu3RNM2Q/iEAlKbpQ1EUT1eSJN2Ox+N7RVHeptPp+6Ww3W6nzmazZ0EQXomIKI7jUNd1yLLcuQQky3LHMAzEcRwC+DSGw2GXMVa4rjsHIPxRTXBdd84YK0ajURcAncGIiMIwbGiatrYsa5VlWf0nUJ7ndcuyVrqur/v9fuMA+gY7pDqOs1RVdcM5b556nPOmpmkbx3GWh+tLYR8LVc/zJoyxbZIkPQDXSZL0Wq3W1vO8CYDqye5xKmW/MQzjjoheRFHMFovFDQBzMBikX4LLEOcKgqBt2zZ832//0uI4e5GDtvbPb9zRAAAAAElFTkSuQmCC');
+	position: absolute;
+	right: 30px;
+	top: 10px;
+}
+.menu-title {
+	font-family: 'Helvetica Neue Light', sans-serif;
+	font-size: 15px;
+	position: absolute;
+	top: 8px;
+	right: 60px;
+	text-transform: none;
+}
+.go-back {
+	border-bottom: 1px solid rgb(204,204,204);
+	height: 55px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+.go-back span {
+	font-family: 'Helvetica Neue Light',sans-serif;
+	font-size: 15px;
+}
+.roster-h1 {
+	box-sizing: border-box;
+	color: rgb(51,51,51);
+	font-family: 'Futura Today';
+	font-size: 20px;
+	font-weight: normal;
+	margin: 15px;
+	position: relative;
+	text-align: left;
+	text-transform: uppercase;
+	width: 100%;
+}
+.roster-h2,
+.subhead-h2 {
+	box-sizing: border-box;
+	color: rgb(153,153,153);/*#999*/
+	font-family: 'Futura Today';
+	font-size: 20px;
+	font-weight: normal;
+	margin: 15px;
+	text-transform: uppercase;
+	width: auto;
+}
+td .roster-h2,
+td .subhead-h2 {
+	box-sizing: border-box;
+	text-align: left;
+	line-height: 21px;
+}
+
+/* ------ PERSONAL INFO ------ */
+.player-top-info {
+	border-bottom: 1px solid rgb(204,204,204);
+	color: rgb(51,51,51);
+	position: relative;
+}
+.player-personal {
+	display: inline-block;
+	margin: 0 15px 10px 15px;
+	width: 55%;
+}
+.player-image {
+	float: right;
+	height: 160px;
+	margin: 22px 15px 0 0;
+	overflow: hidden;
+	vertical-align: top;
+	width: 160px;
+}
+.round-image {
+	border-radius: 50%;
+	overflow: hidden;
+	height: 150px;
+	width: 150px;
+}
+.round-image img {
+	display: block;
+	width: 150px;
+	height: auto;
+}
+.player-personal h1 {
+	color: rgb(51,51,51);
+	font-family: 'Futura Today Bold', sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 15px 15px 0 0;
+}
+.player-personal h2 {
+	font-family: 'Futura Today', sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0 15px 22px 0;
+}
+ul.player-bio {
+	margin: 15px 0;
+	padding: 0;
+	list-style-type: none;
+}
+ul.player-bio li {
+	font-family: 'Futura Today', sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+}
+ul.player-bio li span {
+	display: inline-block;
+	font-family: 'Futura Today Demi Bold',sans-serif;
+	margin: 0 10px 0 0;
+	text-transform: capitalize;
+}
+ul.player-bio li span+span {
+	font-family: 'Futura Today', sans-serif;
+	text-transform: none;
+}
+ul.player-bio li span.dob {
+	text-transform: uppercase;
+}
+ul.player-bio li span.num:after {
+	content: " years";
+}
+ul.player-bio li span.wt:after {
+	content: " lbs";
+}
+
+@media screen and (max-width: 600px) {
+	.player-personal {
+		margin-left: 10px;
+	}
+	.menu-left-arrow {
+		margin-left: 10px;
+	}
+
+	#ncaaf th.player-games-played,
+	#ncaaf td.player-games-played,
+	th.player-season,
+	th.player-team,
+	td.player-season,
+	td.player-team {
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 0;
+	}
+	
+	.penalties,
+	.shots,
+	.shot-percent,
+	.points-per-game,
+	.shorthanded-goals,
+	.game-winning-goal,
+	.walks,
+	.runs-batted-in,
+	.caught-stealing,
+	.at-bats,
+	.doubles,
+	.triples,
+	.player-hide,
+	.nba-steals,
+	.free-throw-percent,
+	.nba-turnovers,
+	.field-goal-percent,
+	.rushing-average-yards-per,
+	.rushing_first_down,
+	.fumbles-committed,
+	.fumbles-lost,
+	.blown-saves,
+	.holds,
+	.games-started,
+	.pitcher-hits,
+	.saves,
+	.player-games-played,
+	.passing-percent,
+	.passing-yds-avg,
+	.passing-yds,
+	.passing_longest_yards,
+	.passing-sac,
+	.tablet-ad-container {
+		display: none;
+	}
+	td.career {
+		font-size: 14px;
+		padding-left: 10px;
+		text-align: left;
+	}
+	.mobile-ad-container {
+		display: block;
+	}
+	.touchbacks,
+	.rushing_touchdowns,
+	.losses {
+		border-right: none;
+	}
+	.player-personal {
+		width: 100%;
+	}
+	.player-top-info {
+		border-bottom: none;
+	}
+	.round-image {
+		border-radius: 50%;
+		height: 125px;
+		overflow: hidden;
+		width: 125px;
+	}
+	.round-image img {
+		display: block;
+		height: 125px;
+		width: 125px;
+	}
+	.player-image {
+		width: 125px;
+	}
+	.roster-h2,
+	.subhead-h2 {
+		margin-left: 10px;
+	}
+}

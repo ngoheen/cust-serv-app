@@ -1,0 +1,244 @@
+/* FONTS */
+@font-face {
+   font-family: 'Futura Today';
+   src: url('../fonts/futura_today_normal.eot');
+   src: url('../fonts/futura_today_normal.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_normal.woff') format('woff'),
+        url('../fonts/futura_today_normal.ttf') format('truetype'),
+        url('../fonts/futura_today_normal.svg#Futura_Today') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Futura Today Demi Bold';
+   src: url('../fonts/futura_today_demibold.eot');
+   src: url('../fonts/futura_today_demibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_demibold.woff') format('woff'),
+        url('../fonts/futura_today_demibold.ttf') format('truetype'),
+        url('../fonts/futura_today_demibold.svg#Futura_Today_Demi_Bold') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Futura Today Bold';
+   src: url('../fonts/futura_today_bold.eot');
+   src: url('../fonts/futura_today_bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_bold.woff') format('woff'),
+        url('../fonts/futura_today_bold.ttf') format('truetype'),
+        url('../fonts/futura_today_bold.svg#Futura_Today_Bold') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Futura Today Light';
+   src: url('../fonts/futura_today_light.eot');
+   src: url('../fonts/futura_today_light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_today_light.woff') format('woff'),
+        url('../fonts/futura_today_light.ttf') format('truetype'),
+        url('../fonts/futura_today_light.svg#Futura_Today_Light') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Helvetica Neu Light';
+   src: url('../fonts/helveticaneue-light-webfont.eot');
+   src: url('../fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helveticaneue-light-webfont.woff') format('woff'),
+        url('../fonts/helveticaneue-light-webfont.ttf') format('truetype'),
+        url('../fonts/helveticaneue-light-webfont.svg#Helvetica_Neue_Light') format('svg');
+   font-style: normal;
+   font-weight: normal;
+}
+@font-face {
+    font-family: 'Gannett Icons';
+    src: url('../fonts/gannett-icons.eot');
+    src: url('../fonts/gannett-icons.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/gannett-icons.ttf') format('truetype'), 
+         url('../fonts/gannett-icons.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.app-body {
+	box-sizing: border-box;
+	color: rgb(51,51,51);
+	font-family: 'Futura Today', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+	width: 100%;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+.serv-app-wrap {
+	height: 100%;
+	margin: 15px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: calc( 100% - 30px );
+}
+.button-container {
+	margin-top: 20px;
+}
+
+h1 {
+	border-bottom: 1px solid #cbcbcb;
+	margin: 10px 0;
+	padding: 0 0 10px;
+	font-family: 'Futura Today Light', sans-serif;
+	font-size: 28px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.title-nav {
+	background: #000;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+.title-nav img {
+	margin: auto;
+	height: 46px;
+	width: auto;
+}
+
+
+a {
+	color: rgb(0, 151, 255);
+	font-family: 'Futura Today';
+	text-decoration: none;
+}
+/*
+background: -webkit-linear-gradient(top, rgb(77, 175, 250) 0%, rgb(26, 153, 246) 61%, rgb(0, 142, 244) 100%);
+background: -o-linear-gradient(top, rgb(77, 175, 250) 0%, rgb(26, 153, 246) 61%, rgb(0, 142, 244) 100%);
+background: -ms-linear-gradient(top, rgb(77, 175, 250) 0%, rgb(26, 153, 246) 61%, rgb(0, 142, 244) 100%);
+background: -moz-linear-gradient(top, rgb(77, 175, 250) 0%, rgb(26, 153, 246) 61%, rgb(0, 142, 244) 100%);
+background: linear-gradient(to bottom, rgb(77, 175, 250) 0%, rgb(26, 153, 246) 61%, rgb(0, 142, 244) 100%);
+background: linear-gradient(to bottom, blue, white);
+background: linear-gradient(<to direction> or <angle>, <color stop>, <color stop>);
+*/
+.big-button {
+	display: block;
+	background: linear-gradient(to bottom, rgb(77, 175, 250) 0%, rgb(26, 153, 246) 61%, rgb(0, 142, 244) 100%);
+	border: 1px solid rgb(1,143,229);
+	background: linear-gradient(to bottom, rrgb(26, 153, 246) 61%, rgb(0, 142, 244) 100%);
+	width: 100%;
+	height: 48px;
+	border-radius: 3px;
+	color: rgb(255,255,255);
+	font-size: 14px;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Futura Today Demi Bold';
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	line-height: 48px;
+	margin: 12px 0;
+}
+a.big-button:first-child {
+	margin-top: 20px;
+}
+.main-email {
+	padding-left:10px;
+}
+
+/* ------ STATS TABLE ------ */
+table {
+	width: 100%;
+	
+}
+table, td, th {
+	border-spacing: 0;
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+
+td {
+	color: rgb(51,51,51);
+	font-family: 'Futura Today',sans-serif;
+	font-size: 14px;
+
+	line-height: 26px;
+	padding: 0;
+	text-align: left;
+}
+td:first-child {
+	font-family: 'Futura Today Demi Bold',sans-serif;
+	width: 40%;
+}
+@media screen and (max-width: 320px) {
+	h1 {
+		font-size: 24px;
+	}
+	td:first-child {
+		width: 50%;
+	}
+}
+
+th {
+	background: rgb(243,243,243);
+	border-bottom: 1px solid rgb(217,217,217);
+	border-top: 1px solid rgb(217,217,217);
+	border-right: none !important;      
+	color: rgb(51,51,51);
+	font-family: 'Futura Today Demi Bold', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 15px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+
+/* small phones only */
+@media screen and (max-width: 320px) {
+	
+	
+}
+
+/* larger phones */
+@media screen and (min-width: 321px) and (max-width: 639px) {
+	
+}
+/* mobile only */
+@media screen and (max-width: 639px) {
+
+	
+}
+
+/* tablet and larger only */
+@media only screen and (min-width: 640px) {
+	
+}
+
+@media only screen and (min-width: 640px) and (max-width: 919px) {
+	.spt-wide-only {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 920px) {
+
+}
